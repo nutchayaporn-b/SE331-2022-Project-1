@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col w-[60%]">
-    <div class="flex gap-4">
+  <div class="flex flex-col md:w-[60%]">
+    <div class="flex flex-col sm:flex-row gap-4">
       <UserCard
         :name="user.name"
         :surname="user.surname"
@@ -25,7 +25,7 @@
         />
       </table>
     </div>
-    <div class="h-100 flex mt-4 w-full">
+    <div class="h-100 flex flex-col sm:flex-row mt-4 w-full">
       <RecommendationForm :userId="user.id" @add="addRecommendation" />
       <RecommendationList :recommendations="recommendations" :userId="user.id" />
     </div>

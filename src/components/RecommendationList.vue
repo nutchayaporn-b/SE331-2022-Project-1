@@ -1,10 +1,10 @@
 <template>
-  <div class="flex flex-col overflow-y-scroll w-[58%] px-6 py-2 gap-6">
+  <div class="flex flex-col sm:w-[58%] px-6 py-2 gap-6">
     <template v-for="recommendation in recommendations">
       <div class="flex-col flex" v-if="userId == recommendation.userId">
         <div class="flex border-solid border-black border w-full">
           <h4 class="bg-gray-200 px-4 py-2 border-solid border-black border-r">DOCTER NAME</h4>
-          <p class="flex items-center px-3">{{ recommendation.docterName }}</p>
+          <p class="flex items-center px-3 break-words">{{ recommendation.docterName }}</p>
         </div>
         <div class="border-solid border-black border-b border-l border-r px-4 py-2 break-words">
           {{ recommendation.recommendation }}

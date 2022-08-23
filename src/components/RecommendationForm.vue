@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-[25%]">
+  <div class="flex sm:w-[25%]">
     <div class="flex-col flex gap-3">
       <h4 class="text-2xl font-bold">Write a Recommendation</h4>
       <input
