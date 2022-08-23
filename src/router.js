@@ -4,7 +4,7 @@ import VaccineHistory from "./views/VaccineHistory.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
-  { path: "/vaccine-history", name: "Vaccine History", component: VaccineHistory },
+  { path: "/vaccine-history/:userId", name: "Vaccine History", component: VaccineHistory },
 ];
 
 const router = createRouter({
