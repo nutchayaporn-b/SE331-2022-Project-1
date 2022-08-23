@@ -4,4 +4,5 @@ import Navbar from "./layouts/Navbar.vue";
 
 <template>
   <Navbar />
+  <router-view />
 </template>
