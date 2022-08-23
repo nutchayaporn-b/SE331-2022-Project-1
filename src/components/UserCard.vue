@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-60 h-72 border-black border-solid border">
+  <div class="flex flex-col w-60 h-72 border-black border-solid border cursor-pointer hover:bg-blue-100">
     <img
       :src="'/images/' + (img ? img : 'placeholder') + '.jpg'"
       alt="Profile Picture"
