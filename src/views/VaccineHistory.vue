@@ -24,16 +24,9 @@
         />
       </table>
     </div>
-    <div class="flex mt-4">
-      <div class="flex-col flex gap-3">
-        <h4 class="text-2xl font-bold">Write a Recommendation</h4>
-        <textarea
-          cols="30"
-          rows="10"
-          class="px-2 py-1 text-lg border border-black border-solid"
-          placeholder="Write here..."
-        ></textarea>
-      </div>
+    <div class="h-100 flex mt-4 w-full">
+      <RecommendationForm :userId="user.id" @add="addRecommendation" />
+      <RecommendationList :recommendations="recommendations" :userId="user.id" />
     </div>
   </div>
 </template>
@@ -41,10 +34,22 @@
 import UserCard from "../components/UserCard.vue";
 import users from "../mockups/users";
 import VaccineTableBodyInfo from "../components/VaccineTableBodyInfo.vue";
+import RecommendationForm from "../components/RecommendationForm.vue";
+import RecommendationList from "../components/RecommendationList.vue";
 export default {
   components: {
     UserCard,
     VaccineTableBodyInfo,
+    RecommendationForm,
+    RecommendationList,
+  },
+  created() {
+    this.recommendations = JSON.parse(localStorage.getItem("recommendations"));
+  },
+  data() {
+    return {
+      recommendations: [],
+    };
   },
   computed: {
     userId() {
@@ -52,6 +57,11 @@ export default {
     },
     user() {
       return users.find((u) => u.id == this.userId);
+    },
+  },
+  methods: {
+    addRecommendation(newRecommendations) {
+      this.recommendations = newRecommendations;
     },
   },
 };
