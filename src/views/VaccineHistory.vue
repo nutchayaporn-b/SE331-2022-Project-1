@@ -5,6 +5,7 @@
         :name="user.name"
         :surname="user.surname"
         :age="user.age"
+        :img="user.img"
         :hometown="user.hometown"
         :dose="user.vaccines.length"
       />

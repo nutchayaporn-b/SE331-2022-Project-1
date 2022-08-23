@@ -5,6 +5,7 @@ const users = [
     surname: "Nantachai",
     age: 19,
     hometown: "Bangkok",
+    img: "pisitpong",
     vaccines: [
       {
         id: "pf-1",
@@ -24,6 +25,7 @@ const users = [
     surname: "Nuamkrut",
     age: 21,
     hometown: "Chiang Mai",
+    img: "pontakarn",
     vaccines: [
       {
         id: "pf-2",
@@ -89,6 +91,7 @@ const users = [
     surname: "Suksawat",
     age: 21,
     hometown: "Payao",
+    img: "supachok",
     vaccines: [
       {
         id: "md-6",
@@ -175,7 +178,14 @@ const users = [
     surname: "Keawwong",
     age: 20,
     hometown: "Bangkok",
-    vaccines: [],
+    img: "chankanit",
+    vaccines: [
+      {
+        id: "sn-1",
+        name: "Sinovac",
+        timestamp: new Date("2022-04-03 10:24:44"),
+      },
+    ],
   },
   {
     id: 11,

@@ -9,6 +9,7 @@
           :surname="user.surname"
           :age="user.age"
           :hometown="user.hometown"
+          :img="user.img"
           :dose="user.vaccines.length"
           @click="goToVaccineHistory(user)"
         />
