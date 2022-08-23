@@ -4,5 +4,7 @@ import Navbar from "./layouts/Navbar.vue";
 
 <template>
   <Navbar />
-  <router-view />
+  <div class="flex w-screen justify-center py-8">
+    <router-view />
+  </div>
 </template>
