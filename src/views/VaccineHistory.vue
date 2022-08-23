@@ -24,7 +24,17 @@
         />
       </table>
     </div>
-    <div class=""></div>
+    <div class="flex mt-4">
+      <div class="flex-col flex gap-3">
+        <h4 class="text-2xl font-bold">Write a Recommendation</h4>
+        <textarea
+          cols="30"
+          rows="10"
+          class="px-2 py-1 text-lg border border-black border-solid"
+          placeholder="Write here..."
+        ></textarea>
+      </div>
+    </div>
   </div>
 </template>
 <script>
